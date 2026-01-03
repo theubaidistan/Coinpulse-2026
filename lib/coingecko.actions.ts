@@ -51,7 +51,7 @@ export async function getPools(
     network: '',
   };
 
-  if (network && contractAddress) {
+  https: if (network && contractAddress) {
     try {
       const poolData = await fetcher<{ data: PoolData[] }>(
         `/onchain/networks/${network}/tokens/${contractAddress}/pools`,
